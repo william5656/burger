@@ -1,0 +1,21 @@
+
+{{!-- <tr class="table-row">
+    <td class="table-first-col">{{id}}. {{burger_name}}</td>
+    <td><button class="change-devour" data-id="{{id}}">Devour it!</button></td> 
+</tr> --}}
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-6">
+            {{id}}. {{burger_name}}
+
+            <button class="change-devour" data-id="{{id}}" data-newstate="{{devour}}">
+                {{#if devour}}Devour It{{else}}Back in Time {{/if}}
+            </button>
+        </div>
+    </div>
+
+</div>
+
